@@ -4,7 +4,7 @@
 Work Page Directive
 **/
 
-angular.module('personalAngularApp')
+angular.module('smouche')
   .directive('workPage', [ function () {
     return {
       restrict: 'E',

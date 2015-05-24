@@ -4,7 +4,7 @@
 Contact Page Directive
 **/
 
-angular.module('personalAngularApp')
+angular.module('smouche')
   .directive('contactPage', [ function () {
     return {
       restrict: 'E',

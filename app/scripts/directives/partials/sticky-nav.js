@@ -4,7 +4,7 @@
 Sticky Nav Directive
 **/
 
-angular.module('personalAngularApp')
+angular.module('smouche')
   .directive('stickyNav', [ function () {
     return {
       restrict: 'E',

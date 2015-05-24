@@ -4,7 +4,7 @@
 About Page Directive
 **/
 
-angular.module('personalAngularApp')
+angular.module('smouche')
   .directive('aboutPage', [ function () {
     return {
       restrict: 'E',

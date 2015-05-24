@@ -2,15 +2,15 @@
 
 /**
  * @ngdoc overview
- * @name personalAngularApp
+ * @name smouche
  * @description
- * # personalAngularApp
+ * # smouche
  *
  * Main module of the application.
  */
  
 angular
-  .module('personalAngularApp', [
+  .module('smouche', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

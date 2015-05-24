@@ -1,0 +1,18 @@
+@import 'compass', 
+        'settings', 
+        'foundation', 
+        'common/common', 
+        'partials/partials';
+
+body {
+  font-family: sans-serif;
+  background: radial-gradient(circle, #7c225b, #280b1d);
+
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.clear {
+  clear: both;
+}

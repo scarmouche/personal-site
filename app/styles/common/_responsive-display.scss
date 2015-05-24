@@ -1,0 +1,58 @@
+@media (min-width: 600px) and (max-width: 1023px) {
+  .rsp-container {
+    width: 96%;
+    margin: 0 2%;
+  }
+  .col4 {
+    clear: both;
+    padding: 20px 0;
+    border-bottom: 1px solid #CCC;
+    &:after {
+      content: "";
+      clear: both;
+      width: 100%;
+    }
+  }
+  .image {
+    float: left;
+    width: 40%;
+  }
+  .copy {
+    float: right;
+    width: 56%;
+  }
+}
+
+@media #{$small-only} {
+  .rsp-container {
+    width: 96%;
+    margin: 0 2%;
+  }
+  .col4 {
+    padding: 10px 0;
+    border-bottom: 1px solid #CCC;
+  }
+  .image, .copy {
+    text-align: center;  
+  }
+}
+
+@media #{$medium-up} {
+  .rsp-container {
+    width: 960px;
+    margin: 0 auto;
+    &:after {
+      content: "";
+      clear: both;
+      width: 100%;
+    }
+  }
+  .col4 {
+    width: 300px;
+    float: left;
+    margin: 0 10px;
+  }
+  .image {
+    text-align: center;
+  }
+}

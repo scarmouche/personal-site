@@ -1,0 +1,19 @@
+.sticky-nav {
+  ul {
+    list-style: none;
+  }
+  li {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: $green;
+  }
+}
+
+@media #{$medium-up} {
+
+  .sticky-nav {
+
+  }
+  
+}

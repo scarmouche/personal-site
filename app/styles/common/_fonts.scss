@@ -1,12 +1,23 @@
-@font-face {
-    font-family: 'MuseoSans';
-    src: url('MuseoSans_500-webfont.eot');
-    src: url('MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
-         url('MuseoSans_500-webfont.woff2') format('woff2'),
-         url('MuseoSans_500-webfont.woff') format('woff'),
-         url('MuseoSans_500-webfont.ttf') format('truetype'),
-         url('MuseoSans_500-webfont.svg#museo_sans500') format('svg');
-    font-weight: normal;
-    font-style: normal;
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Playfair+Display+SC:400,900,700|Yanone+Kaffeesatz:400,700,300,200|Montserrat:400,700);
 
+// has weight 400
+.font-mono {  
+  font-family: 'Droid Sans Mono';
 }
+ 
+ // has weights 400, 700, 900
+.font-serif-1 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+// has weights 200, 300, 400, 700
+.font-sans-1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+// has weights 400, 700
+.font-sans-3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+

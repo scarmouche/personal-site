@@ -79,7 +79,7 @@ $include-html-global-classes: $include-html-classes;
 $include-html-grid-classes: $include-html-classes;
 $include-xl-html-grid-classes: false;
 
-$row-width: rem-calc(1000);
+$row-width: rem-calc(960);
 $total-columns: 12;
 $column-gutter: rem-calc(30);
 
@@ -118,13 +118,16 @@ $black       : #000000;
 // My colors 
 
 $green: #b2e470;
+$greenMed: scale-color($green, $lightness: -15%);
 
-$magenta: #721f53;
-$magentaDark: #280b1d;
 $magentaLight: #7c225b;
+$magentaDark: #280b1d;
+$magenta: scale-color($magentaLight, $lightness: 11%);
 
 $aqua: #10d3ac;
+$aquaMed: scale-color($aqua, $lightness: -15%);
 $yellow: #f9e46b;
+$yellowMed: scale-color($yellow, $lightness: -11%);
 
 // We use these as default colors throughout
 $primary-color: $magentaLight;

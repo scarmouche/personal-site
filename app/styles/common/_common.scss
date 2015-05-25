@@ -1,2 +1,26 @@
-@import 'icomoon-icons',
-        'responsive-display';
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+}
+
+@mixin centerHorizontal() {
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+@mixin centerVertical() {
+  transform: translate(0, -50%);
+  top: 50%;
+}
+
+@mixin centerAll() {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+@import 'responsive-display';

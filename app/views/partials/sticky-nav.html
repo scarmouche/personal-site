@@ -2,11 +2,17 @@
   <div class="sticky-nav">
     <nav class="nav-container">
       <ul class="nav-buttons">
-        <li class="menu-toggle"><i class="fontawesome-circle"></i></li>
-        <li><a href="/"><i class="fontawesome-home"></i></a></li>
-        <li><a href="work"><i class="fontawesome-th"></i></a></li>
-        <li><a href="/about"><i class="fontawesome-user"></i></a></li>
-        <li><a href="/contact"><i class="fontawesome-envelope-alt"></i></a></li>
+
+        <li class="menu-toggle" ng-init="buttonsHidden = false" ng-click="buttonsHidden = !buttonsHidden">
+          <i class="fontawesome-circle"></i>
+        </li>
+        <div ng-hide="buttonsHidden">
+          <sticky-nav-btn href="/" icon="home"></sticky-nav-btn>
+          <sticky-nav-btn href="/work" icon="th"></sticky-nav-btn>
+          <sticky-nav-btn href="/about" icon="user"></sticky-nav-btn>
+          <sticky-nav-btn href="/contact" icon="envelope-alt"></sticky-nav-btn>
+        </div>
+        
       </ul>
     </nav>
   </div>

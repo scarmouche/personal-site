@@ -25,6 +25,9 @@
     font-size: rem-calc(20);
     position: relative;
     margin: 0 7px;
+    &.hidden {
+      display: none;
+    }
 
     [class*="fontawesome-"] {
       position: absolute;

@@ -118,16 +118,21 @@ $black       : #000000;
 // My colors 
 
 $green: #b2e470;
-$magenta: #280b1d;
+
+$magenta: #721f53;
+$magentaDark: #280b1d;
 $magentaLight: #7c225b;
+
+$aqua: #10d3ac;
+$yellow: #f9e46b;
 
 // We use these as default colors throughout
 $primary-color: $magentaLight;
 $secondary-color: $green;
-$alert-color: #f04124;
-$success-color: #43AC6A;
-$warning-color: #f08a24;
-$info-color: #a0d3e8;
+$alert-color: scale-color($magentaLight, $lightness: 11%);
+$success-color: scale-color($green, $lightness: -15%);
+$warning-color: scale-color($yellow, $lightness: -11%);
+$info-color: scale-color($aqua, $lightness: -15%);
 
 // We use these to control various global styles
 $body-bg: $magenta;

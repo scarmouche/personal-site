@@ -1,0 +1,18 @@
+.logo-text {
+  text-transform: uppercase;
+  font-size: rem-calc(20);
+  color: $green;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+  border-bottom: 10px solid $greenMed;
+  display: block;
+}
+
+@media #{$medium-up} {
+  .logo-text {
+    position: fixed;
+    font-size: rem-calc(35);
+    top: 20px;
+    left: 20px;
+  }
+}

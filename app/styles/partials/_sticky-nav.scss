@@ -1,9 +1,10 @@
 .sticky-nav-container {
-  position: fixed;
-  left: 0;
-  top: 0;
   width: 100%;
-  height: 100px;
+  height: 50px;
+  z-index: 1000;
+  position: absolute;
+  top: 100px;
+  left: 0;
 
   .sticky-nav {
     position: relative;
@@ -44,10 +45,18 @@
       }
     } 
   }
+
+  .link-buttons {
+    display: inline-block;
+  }
 }
 
 @media #{$small-only} {
   .sticky-nav-container {
+    &.stuck {
+      position: fixed;
+      top: 0;
+    }
     li {
       display: inline-block;
     }
@@ -57,6 +66,8 @@
 @media #{$medium-up} {
   
   .sticky-nav-container {
+    position: fixed;
+    top: 0;
     height: 100%;
     width: 100px;
     .nav-container {

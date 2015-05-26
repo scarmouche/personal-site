@@ -18,13 +18,24 @@
   </head>
   <body ng-app="smouche">
     
-    <div class="logo">
-      <h3>Selena Carmouche</h3>
+    <header class="header-container">
+        <div class="logo">
+          <h3 class="logo-text font-sans-1"><div>Selena</div> <div>Carmouche</div></h3>
+        </div>
+    
+        <sticky-nav></sticky-nav>
+    </header>
+
+    <div class="view-outer-container">
+        <div class="view-wrapper clearfix">
+
+            <div class="view-content">
+                <div ui-view></div>
+                
+            </div>
+
+        </div>
     </div>
-
-    <sticky-nav></sticky-nav>
-
-    <div ui-view></div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

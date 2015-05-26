@@ -1,4 +1,4 @@
-<nav class="sticky-nav-container">
+<nav class="sticky-nav-container" ng-class="{'stuck': isStuck}">
   <div class="sticky-nav">
     <nav class="nav-container">
       <ul class="nav-buttons">
@@ -6,7 +6,7 @@
         <li class="menu-toggle" ng-init="buttonsHidden = false" ng-click="buttonsHidden = !buttonsHidden">
           <i class="fontawesome-circle"></i>
         </li>
-        <div ng-hide="buttonsHidden">
+        <div class="link-buttons" ng-hide="buttonsHidden">
           <sticky-nav-btn href="/" icon="home"></sticky-nav-btn>
           <sticky-nav-btn href="/work" icon="th"></sticky-nav-btn>
           <sticky-nav-btn href="/about" icon="user"></sticky-nav-btn>

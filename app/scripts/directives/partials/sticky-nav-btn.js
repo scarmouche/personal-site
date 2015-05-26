@@ -13,7 +13,7 @@ angular.module('smouche')
         href: '@'
       },
       replace: false,
-      template: '<li><a href="{{href}}"><i class="fontawesome-{{icon}}"></i></a></li>',
+      template: '<li><a href="{{href}}"><i class="nav-icon fontawesome-{{icon}}"></i></a></li>',
       link: function(scope, element, attr) {
 
       }

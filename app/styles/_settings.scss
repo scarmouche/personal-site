@@ -81,7 +81,7 @@ $include-xl-html-grid-classes: false;
 
 $row-width: rem-calc(1000);
 $total-columns: 12;
-$column-gutter: rem-calc(30);
+$column-gutter: rem-calc(20);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -118,13 +118,17 @@ $black       : #000000;
 // My colors 
 
 $green: #b2e470;
+$greenMed: scale-color($green, $lightness: -15%);
 
 $magenta: #721f53;
 $magentaDark: #280b1d;
 $magentaLight: #7c225b;
 
 $aqua: #10d3ac;
+$aquaMed: scale-color($aqua, $lightness: -15%);
+
 $yellow: #f9e46b;
+$yellowMed: scale-color($yellow, $lightness: -11%);
 
 // We use these as default colors throughout
 $primary-color: $magentaLight;
@@ -399,18 +403,18 @@ $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
 // 03. Block Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-block-grid-classes: $include-html-classes;
-// $include-xl-html-block-grid-classes: false;
+$include-html-block-grid-classes: $include-html-classes;
+$include-xl-html-block-grid-classes: false;
 
 // We use this to control the maximum number of block grid elements per row
-// $block-grid-elements: 12;
-// $block-grid-default-spacing: rem-calc(20);
+$block-grid-elements: 12;
+$block-grid-default-spacing: rem-calc(5);
 
-// $align-block-grid-to-grid: false;
-// @if $align-block-grid-to-grid {$block-grid-default-spacing: $column-gutter;}
+$align-block-grid-to-grid: false;
+@if $align-block-grid-to-grid {$block-grid-default-spacing: $column-gutter;}
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
-// $block-grid-media-queries: true;
+$block-grid-media-queries: true;
 
 // 04. Breadcrumbs
 // - - - - - - - - - - - - - - - - - - - - - - - - -

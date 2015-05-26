@@ -2,6 +2,7 @@
         'settings', 
         'foundation', 
         'common/common', 
+        'layout/layout',
         'partials/partials';
 
 html, body {
@@ -12,7 +13,7 @@ html, body {
 body {
   font-family: sans-serif;
   background: radial-gradient(circle, #7c225b, #280b1d);
-
+  position: relative;
 }
 img {
   max-width: 100%;
